@@ -74,16 +74,16 @@ class AccountListContainer extends Component {
   }
 
   componentDidMount() {
-    // const refreshMessages = () => {
-    //   this._getAccounts()
-    // }
-    //
-    // refreshMessages()
-    this._getAccounts()
-    // setInterval(()=>{
-    //   refreshMessages();
-    //   return refreshMessages
-    // }, 5000)
+    const refreshMessages = () => {
+      this._getAccounts()
+    }
+
+    refreshMessages()
+
+    setInterval(()=>{
+      refreshMessages();
+      return refreshMessages
+    }, 5000)
   }
 
   render() {
